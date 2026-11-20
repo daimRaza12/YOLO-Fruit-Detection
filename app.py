@@ -1,10 +1,12 @@
 
+
+import os
+os.environ["OPENCV_OPENCL_RUNTIME"] = "disabled"
+
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import pandas as pd
-import os
-
 st.set_page_config(
     page_title="YOLO Fruit Detection",
     page_icon="🍎",
